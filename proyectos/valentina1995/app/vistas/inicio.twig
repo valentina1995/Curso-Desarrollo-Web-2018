@@ -1,0 +1,23 @@
+<!-- Todo -->
+
+{% extends "plantillas/base.twig" %}
+
+{% block titulo %}Inicio del repositorio{% endblock  %}
+{% block stylesheets %} 
+
+    {{ parent() }}
+    <link rel="stylesheet" href="{{constant('APP_URL')}}assets\css\inicio.css">
+
+{% endblock  %}
+{% block contenido %}
+    <div class="contenedor">
+        <main class="main">
+            <div class="banner">
+                <h1 class="titulo">repositorio de actividades</h1>
+                <a href="#" class="link link-aplicacion">abrir aplicacion</a>
+                <a href="#" class="link link-admin">administrar</a>
+            </div>
+        </main>
+        <!---Falta el fragmento del footer.twig-->
+    </div>
+{% endblock %}
